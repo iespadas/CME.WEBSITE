@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f7f6; /* Adjusted to a neutral background color */
+            background-color: #f4f7f6;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -15,14 +15,14 @@
         .container {
             display: flex;
             width: 80%;
-            align-items: flex-start; /* Aligns the boxes to the top */
+            align-items: flex-start;
         }
         .login-container {
             background-color: #2c3e50;
             padding: 20px;
             border-radius: 5px;
             width: 40%;
-            color: white; /* Text color */
+            color: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .info-container {
@@ -30,19 +30,19 @@
             padding: 20px;
             border-radius: 5px;
             width: 60%;
-            margin-left: 20px; /* Spacing between the two containers */
-            color: white; /* Text color */
+            margin-left: 20px;
+            color: white;
         }
         input[type="text"], input[type="password"] {
-            width: calc(100% - 20px); /* Adjust width to account for padding */
+            width: calc(100% - 20px);
             padding: 10px;
             margin: 10px 0;
-            border: none; /* Removes border */
+            border: none;
             border-radius: 4px;
             box-sizing: border-box;
         }
         input[type="submit"] {
-            width: calc(100% - 20px); /* Adjust width to account for padding */
+            width: calc(100% - 20px);
             padding: 10px;
             border: none;
             background-color: #3498db;
@@ -59,12 +59,14 @@
             margin-bottom: 10px;
         }
         .info-bullet-points {
-            list-style: none; /* Removes default list styling */
+            list-style: none;
             padding: 0;
+            display: flex;
         }
         .info-bullet-points li {
             margin-bottom: 5px;
-            position: relative; /* For positioning the pseudo-element */
+            position: relative;
+            margin-right: 30px;
         }
         .info-bullet-points li:before {
             content: '•';
@@ -72,9 +74,8 @@
             font-weight: bold;
             display: inline-block; 
             width: 1em;
-            margin-left: -1em; /* Pulls bullet outside of the content flow */
+            margin-left: -1em;
         }
-        /* Additional styles for buttons and links can be added here */
     </style>
 </head>
 <body>
@@ -90,39 +91,27 @@
                 </div>
                 <input type="submit" value="LOG IN">
                 <p>By logging in, you agree to the <a href="#" style="color: #3498db;">Terms of Use</a></p>
-                <!-- Additional elements like 'Forgot Password' can be added here -->
             </form>
         </div>
         <div class="info-container">
             <div class="info-title">Get the most out of CME Group</div>
-            <ul class="info-bullet-points">
-                <!-- List items with bullet points -->
-                <div class="info-container">
-    <div class="info-title">Get the most out of CME Group</div>
-    <div class="info-benefits">
-        <div class="benefits-column">
-            <ul class="info-bullet-points">
-                <li>View exclusive content and premium features</li>
-                <li>Get invitations to events</li>
-                <li>Track your portfolio and simulate market shifts</li>
-            </ul>
-        </div>
-        <div class="benefits-column">
-            <ul class="info-bullet-points">
-                 <li>View exclusive content and premium features</li>
-                <li>Receive timely news and alerts</li>
-                <li>Get invitations to events</li>
-                <li>Get automatic  refreshing of pricing data</li>
-                <li>Track your portfolio and simulate market shifts</li>
-                <li>Manage access to markets, tools, and services in Customer Center</li>
-                
-            </ul>
-        </div>
-    </div>
-    <button style="background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">CREATE ACCOUNT</button>
-    
-            <p>If you need help setting up your new CME Group account or for any Login related issues, please refer to our <a href="#" style="color: #3498db;">User Help System</a> for step-by-step instructions.</p>
-        </div>
-    </div>
-</body>
-</html>
+            <div class="info-benefits">
+                <ul class="info-bullet-points">
+                    <li>View exclusive content and premium features</li>
+                    <li>Receive timely news and alerts</li>
+                </ul>
+                <ul class="info-bullet-points">
+                    <li>Get invitations to events</li>
+                    <li>Get automatic refreshing of pricing data</li>
+                </ul>
+                <ul class="info-bullet-points">
+                    <li>Track your portfolio and simulate market shifts</li>
+                    <li>Manage access to markets, tools, and services in Customer Center</li>
+                </ul>
+            </div>
+            <button style="background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">CREATE ACCOUNT</button>
+                    <p>If you need help setting up your new CME Group account or for any Login related issues, please refer to our <a href="#" style="color: #3498db;">User Help System</a> for step-by-step instructions.</p>
+                </div>
+            </div>
+        </body>
+        </html>
