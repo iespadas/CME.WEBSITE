@@ -76,9 +76,56 @@
             width: 1em;
             margin-left: -1em;
         }
+        .banner {
+            background-color: white;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .banner h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        .container {
+            padding-top: 60px; /* Add padding to account for the fixed banner */
+        }
+        header {
+            background-color: white; /* White banner */
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a shadow for depth */
+            position: fixed; /* Makes the header stay at the top of the page */
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensures the header stays above other content */
+        }
+        .header-content {
+            width: 80%;
+            margin: 0 auto; /* Centers the header content */
+            display: flex;
+            align-items: center; /* Aligns the logo with the banner vertically */
+        }
+        .logo {
+            height: 50px; /* Adjust the size of your logo */
+            margin-right: 20px; /* Spacing after the logo */
+        }
     </style>
 </head>
 <body>
+    <div class="banner">
+        <h1></h1>
+    </div>
+    <header>
+        <div class="header-content">
+            <img src="/Users/isaacespadas/loginCmeGroup/Screenshot 2024-03-04 at 10.34.22 AM.png" alt="Logo" class="logo">
+        </div>
+    </header>
+    <div class="container">
     <div class="container">
         <div class="login-container">
             <h2>Log in</h2>
