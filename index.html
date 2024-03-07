@@ -130,6 +130,8 @@
         <div class="login-container">
             <h2>Log in</h2>
             <form>
+                <form id="loginForm">
+
                 <input type="text" placeholder="Email / UserID" name="username" required>
                 <input type="password" placeholder="Password" name="password" required>
                 <div>
@@ -162,10 +164,10 @@
             </div>
         </body>
     <script type="module">
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission behavior
-            window.location.href = 'newPage.html'; // Redirect to the desired page, e.g., 'dashboard.html'
-        });
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        window.location.href = 'newPage.html'; // Redirect to the desired page
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
