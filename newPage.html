@@ -24,6 +24,8 @@
             background-color: white;
             border: none;
             cursor: pointer;
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Allow padding and margins */
         }
     </style>
 </head>
@@ -31,12 +33,8 @@
 
 <div class="container">
     <h1>You Got Phished!!!</h1>
-    <button class="button" onclick="alert('Learn more about how to protect yourself from phishing attacks.');">Learn More</button>
+    <a href="journal.pdf" class="button" target="_blank">Learn More</a>
 </div>
-
-<script>
-    // Optionally, you can also add your JavaScript code here if you prefer to handle the button click event using JavaScript instead of inline HTML attribute
-</script>
 
 </body>
 </html>
