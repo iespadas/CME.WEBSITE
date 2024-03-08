@@ -164,6 +164,7 @@
             </div>
         </body>
     <script type="module">
+        
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('loginForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission behavior
@@ -190,5 +191,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+       
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+                window.location.href = 'newPage.html'; // Redirect to the desired page
+            });
 </script>
         </html>
